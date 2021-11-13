@@ -3,3 +3,12 @@ services:
     build: ../backend
     ports:
       - "3000:3000"
+  mongo:
+    image: mongo
+    ports:
+      - "27017"
+    container_name: mongo
+    volumes: ["/data/db"]
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: super_secret_password
