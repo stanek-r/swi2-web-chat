@@ -12,14 +12,14 @@ export class ChatWindowComponent implements OnInit, AfterViewChecked {
   }
 
   ngOnInit(): void {
-    this.scrooooooool();
+    this.scrollToBottom();
   }
 
   ngAfterViewChecked(): void {
-    this.scrooooooool();
+    this.scrollToBottom();
   }
 
-  scrooooooool(): void {
+  scrollToBottom(): void {
     if (this.messages) {
       this.messages.nativeElement.scrollTop = this.messages.nativeElement.scrollHeight;
     }
