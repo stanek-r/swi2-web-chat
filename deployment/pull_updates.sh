@@ -1,4 +1,4 @@
 git reset --hard HEAD
 git pull
-TODO: copy new
+# TODO: copy new
 ./prod-linux.sh

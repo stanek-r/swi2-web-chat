@@ -1,1 +1,3 @@
-TODO: cp to docker
+cd ../backend
+mvn clean package
+cd ../deployment
